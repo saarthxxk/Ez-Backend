@@ -1,0 +1,77 @@
+{
+	"info": {
+		"_postman_id": "4a893428-51a6-4fe7-8218-2bd364a68dc5",
+		"name": "client",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46416546",
+		"_collection_link": "https://sarthakawasthi-6574817.postman.co/workspace/EZ-backend-test~ad4fb623-c63f-443f-8588-cbee6af5a146/collection/46416546-4a893428-51a6-4fe7-8218-2bd364a68dc5?action=share&source=collection_link&creator=46416546"
+	},
+	"item": [
+		{
+			"name": "Client Sign Up",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"Kinshuk\",\r\n  \"email\": \"sarthakofficial044@gmail.com\",\r\n  \"password\": \"password@123\",\r\n  \"role\": \"client\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/signup/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"signup",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Client Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/login/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
